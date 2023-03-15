@@ -103,10 +103,10 @@ export class AppComponent  {
     const listWidth = currentTarget.clientWidth || 0;
   
     if (moveX > 0 && leftPosition < 0) {
-      track.style.left = `${leftPosition + 50}px`;
+      track.style.left = `${leftPosition + 25}px`;
       this.startX = event.touches[0].clientX;
     } else if (moveX < 0 && leftPosition > -(trackWidth - listWidth)) {
-      track.style.left = `${leftPosition - 50}px`;
+      track.style.left = `${leftPosition - 25}px`;
       this.startX = event.touches[0].clientX;
     }
   }
